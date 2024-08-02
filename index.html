@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung IPK Semester</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-3">Penghitung IPK Semester</h1>
+        <form id="ipkForm">
+            <div id="courses" class="mb-4">
+                <div class="course form-group row align-items-center">
+                    <span class="courseNumber col-auto text-right pr-2">1.</span>
+                    <input type="text" placeholder="Nama Mata Kuliah" class="courseName form-control col mx-1 ">
+                    <input type="number" placeholder="SKS" class="courseSKS form-control col mx mx-1">
+                    <input type="text" placeholder="Nilai" class="courseGrade form-control col mx-1">
+                    <button type="button" class="removeCourse btn btn-danger col-auto ml-2" onclick="removeCourse(this)">Hapus</button>
+                    <div class="error text-danger col-12 mt-1"></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary mb-2" onclick="addCourse()">Tambah Mata Kuliah</button>
+                <button type="button" class="btn btn-success mb-2" onclick="calculateGPA()">Hitung IPK</button>
+            </div>
+        </form>
+        <h2 id="result" class="text-center"></h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
