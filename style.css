@@ -1,0 +1,22 @@
+body {
+    background-color: #03346E; /* Ubah warna latar belakang */
+}
+
+.courseNumber {
+    font-weight: bold;
+    min-width: 30px;  /* Atur lebar minimum agar tetap rapi */
+    text-align: right; /* Pastikan nomor sejajar di kanan */
+}
+
+.courseName, .courseSKS, .courseGrade {
+    margin-bottom: 10px;
+}
+
+/* Warna placeholder */
+.courseName::placeholder, .courseSKS::placeholder, .courseGrade::placeholder {
+    color: #888;  /* Warna abu-abu */
+}
+
+.error {
+    font-size: 12px;
+}
